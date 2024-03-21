@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My | E-Commerce Website</title>
+	<link rel="shortcut icon" type="x-icon" href="favicon1.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style type="text/css">
+	*{
+	padding: 0;
+	margin: 0;
+/*	font-family: system-ui;*/
+	box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+}
+body{
+	 font-family: "Poppins", sans-serif;
+}
+.header{
+	background: radial-gradient(#fff,#ffd6d6);
+}
+.header .row{
+	margin-top: 60px;
+}
+.container{
+	max-width: 100vw;
+	/*height: 100vh;*/
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.navbar{
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
+nav{
+	flex: 1;
+	text-align: right;
+}
+nav ul{
+	display: inline-block;
+	list-style-type: none;
+}
+nav ul li{
+	display: inline-block;
+	margin-right: 20px;
+}
+a{
+	text-decoration: none;
+	color: #555;
+}
+p{
+	color: #555;
+}
+
+.row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+}
+.col-2{
+	flex-basis: 44%;
+	min-width: 300px;
+}
+.col-2 img{
+	max-width: 100%;
+	padding: 15px 0px;
+}
+
+.col-2 h1{
+	font-size: 50px;
+	line-height: 60px;
+	margin: 20px 0;
+}
+.btn{
+	display: inline-block;
+	background: #ff523b;
+	color: #fff;
+	padding: 8px 30px;
+	margin: 30px 0;
+	border-radius: 30px;
+	border: none;
+	transition: background 0.5s;
+}
+.btn:hover{
+	background: #563434;
+}
+
+/*-----Feature Categories-----*/
+
+.categories{
+	margin: 70px 0;
+}
+.col-3{
+	flex-basis: 30%;
+	min-width: 250px;
+	margin-bottom: 30px;
+	transition: all linear 0.3s;
+}
+.col-3:hover{
+	scale: 1.1;
+}
+.col-3 img{
+	width: 100%;
+	border-radius: 10px;
+}
+.small-container{
+	max-width: 1080px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+/*-----Feature Products-----*/
+.small-container1{
+	max-width: 1080px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.title{
+	text-align: center;
+	margin: 0 auto 80px;
+	position: relative;
+	line-height: 60px;
+	color: #555;
+}
+.title::after{
+	content: '';
+	background: #ff523b;
+	width: 80px;
+	height: 5px;
+	border-radius: 10px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.col-4{
+	flex-basis: 25%;
+	padding: 10px;
+	min-width: 200px;
+	margin-bottom: 50px;
+	transition: transform 0.5s;
+}
+.col-4 img{
+	width: 100%;
+}
+h4{
+	color: #555;
+	font-weight: normal;
+}
+.col-4{
+	font-size: 14px;
+}
+.rating .fa{
+    color: #ff523b;
+}
+.col-4:hover{
+	transform: translateY(-5px);
+}
+
+/*--------Offer------*/
+
+.small-container2{
+	max-width: 1080px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.offer{
+	background: radial-gradient(#fff,#ffd6d6);
+	margin-top: 80px;
+	padding: 30px 0;
+}
+.col-2 .offer-img{
+	padding: 50px;
+}
+small{
+	color: #555;
+}
+
+/*-------Testimonial-------- */
+
+.small-container3{
+	max-width: 1080px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.testimonial{
+	padding-top: 100px;
+}
+.testimonial .col-3{
+	text-align: center;
+	padding: 40px 20px;
+	box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	transition: transform 1.2s;
+
+}
+.testimonial .col-3 img{
+	width: 50px;
+	margin-top: 20px;
+	border-radius: 50%;
+}
+.testimonial .col-3:hover{
+	transform: translateY(-10px);
+}
+.fa.fa-quote-left{
+	font-size: 34px;
+	color: #ff523b;
+}
+.col-3 p{
+	font-size: 12px;
+	margin: 12px 0px;
+	color: #777;
+}
+.testimonial .col-3 h3{
+	font-weight: 600;
+	color: #555;
+	font-size: 16px;
+}
+
+/*-------Brands---------*/
+
+.small-container4{
+	max-width: 1080px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.brands{
+	margin: 100px auto;
+
+}
+.col-5{
+	width: 160px;
+}
+.col-5 img{
+	width: 100%;
+	cursor: pointer;
+	filter: grayscale(100%);
+}
+.col-5 img:hover{
+	filter: grayscale(0);
+}
+
+/*--------footer----------*/
+
+.footer{
+	background: #000;
+	color: #8a8a8a;
+	font-size: 14px;
+	padding: 60px 0 20px;
+}
+.footer p{
+	color: #8a8a8a;
+}
+.footer h3{
+	color: white;
+	margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+	min-width: 250px;
+	margin-bottom: 20px;
+}
+.footer-col-1{
+	flex-basis: 30%;
+}
+.footer-col-2{
+	flex: 1;
+	text-align: center;
+}
+.footer-col-2 img{
+	width: 180px;
+	margin-bottom: 20px;
+}
+.footer-col-3, .footer-col-4{
+	flex-basis: 12%;
+	text-align: center;
+}
+ul{
+	list-style-type: none;
+}
+.app-logo{
+	margin-top: 20px;
+}
+.app-logo img{
+	width: 140px;
+}
+.footer hr{
+	border: none;
+	background: #b5b5b5;
+	height: 1px;
+	margin: 20px 0;
+}
+.copyright{
+	text-align: center;
+}
+
+.menu-icon{
+	width: 28px;
+	margin-left: 20px;
+	display: none;
+}
+/*--------Media Query for Menu---------*/
+
+@media only screen and (max-width: 800px){
+	nav ul{
+       position: absolute;
+       top: 70px;
+       left: 0;
+          background: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+      backdrop-filter: blur(3px);
+      -webkit-backdrop-filter: blur(3px);
+      border: 1px solid rgba(255, 255, 255, 0.20);
+       width: 100%;
+       border-radius: 20px;
+       overflow: hidden;
+       transition: max-height 0.5s;
+
+	}
+	nav ul li{
+		display: block;
+		margin-right: 50px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	nav ul li a{
+		color: white;
+	}
+	.menu-icon{
+		display: block;
+		cursor: pointer;
+	}
+}
+
+/*--------Media Query for less than 600 screen size------*/
+
+@media only screen and (max-width: 600px){
+.row{
+	text-align: center;
+   }
+   .col-2, .col-3, .col-4{
+   	flex-basis: 100%;
+   }
+}
+</style>
+</head>
+<body> 
+
+	<!-- Page 1 Header section -->
+
+     <div class="header">
+	  <div class="container">
+	    <div class="navbar">
+		  <div class="logo">
+		     <img src="logo.png" width="125px">
+		</div>
+		<nav>
+			 <ul id="MenuItems">
+              	<li><a href="">Home</a></li>
+              	<li><a href="">Products</a></li>
+              	<li><a href="">About</a></li>
+              	<li><a href="">Contact</a></li>
+              	<li><a href="">Account</a></li>
+              </ul>
+		</nav>
+		<img src="cart.png" width="30px" height="30px">
+		<img src="menu.png" class="menu-icon" onclick="menutoggle()">
+	</div>
+	<div class="row">
+		<div class="col-2">
+			<h1>Give Your Workout A New Style!</h1>
+			<p>Say goodbye to sleepless nights over counterproductive communications between for services you’re not sure you need but you’re sure you have to pay for.</p>
+			<button class="btn">Explore Now &#8594;</button>
+		</div>
+		<div class="col-2">
+			<img src="image1.png">
+		</div>
+	</div>
+	</div>
+</div>
+	
+	<!-- ------Feature Categories----- -->
+
+		<div class="categories">
+		<div class="small-container">
+			<h2 class="title">Feature Categories</h2>
+		<div class="row">
+			<div class="col-3">
+				<img src="https://images.unsplash.com/photo-1573575154488-f88a60e170df?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fHx8">
+			</div>
+			<div class="col-3">
+				<img src="https://images.unsplash.com/photo-1705218126665-46648472f1ef?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+			</div>
+			<div class="col-3">
+				<img src="https://images.unsplash.com/photo-1553456558-aff63285bdd1?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+			</div>
+		</div>
+	</div>
+</div>
+	<!-- -----Feature Products----- -->
+      
+       <div class="small-container1">
+      	<h2 class="title">Feature Products</h2>
+      	<div class="row">
+      		<div class="col-4">
+      			<img src="https://images.pexels.com/photos/3029796/pexels-photo-3029796.jpeg?auto=compress&cs=tinysrgb&w=400">
+      			<h4>Red Printed T-Shirt</h4>
+      			<div class="rating">
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star-o"></i>
+      			</div>
+      			<p>$50.00</p>
+      		</div>
+      		<div class="col-4">
+      			<img src="https://images.pexels.com/photos/9755651/pexels-photo-9755651.jpeg?auto=compress&cs=tinysrgb&w=400">
+      			<h4>Black Nike Shoes</h4>
+      			<div class="rating">
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star-half-o"></i>
+      				<i class="fa fa-star-half-o"></i>
+      				<i class="fa fa-star-o"></i>
+      			</div>
+      			<p>$3999.00</p>
+      		</div>
+      		<div class="col-4">
+      			<img src="https://images.pexels.com/photos/1040427/pexels-photo-1040427.jpeg?auto=compress&cs=tinysrgb&w=400">
+      			<h4>Stylish Paints</h4>
+      			<div class="rating">
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star-half-o"></i>
+      				<i class="fa fa-star-half-o"></i>
+      			</div>
+      			<p>$1500.00</p>
+      		</div>
+      		<div class="col-4">
+      			<img src="https://images.pexels.com/photos/1306248/pexels-photo-1306248.jpeg?auto=compress&cs=tinysrgb&w=400">
+      			<h4>Blue T-Shirt</h4>
+      			<div class="rating">
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star-half-o"></i>
+      				<i class="fa fa-star-o"></i>
+      			</div>
+      			<p>$5099.00</p>
+      		</div>
+      	</div>
+
+      	<h2 class="title">Latest Products</h2>
+      	<div class="row">
+      		<div class="col-4">
+      			<img src="https://images.pexels.com/photos/1040427/pexels-photo-1040427.jpeg?auto=compress&cs=tinysrgb&w=400">
+      			<h4>Gray Stylo Shoes</h4>
+      			<div class="rating">
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star-o"></i>
+      			</div>
+      			<p>$50.00</p>
+      		</div>
+      		<div class="col-4">
+      			<img src="https://images.pexels.com/photos/1040427/pexels-photo-1040427.jpeg?auto=compress&cs=tinysrgb&w=400">
+      			<h4>Black Printed T-Shirt</h4>
+      			<div class="rating">
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star-half-o"></i>
+      				<i class="fa fa-star-half-o"></i>
+      				<i class="fa fa-star-o"></i>
+      			</div>
+      			<p>$3999.00</p>
+      		</div>
+      		<div class="col-4">
+      			<img src="https://images.pexels.com/photos/1040427/pexels-photo-1040427.jpeg?auto=compress&cs=tinysrgb&w=400">
+      			<h4>Stylish Shocks</h4>
+      			<div class="rating">
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star-half-o"></i>
+      				<i class="fa fa-star-half-o"></i>
+      			</div>
+      			<p>$1500.00</p>
+      		</div>
+      		<div class="col-4">
+      			<img src="https://images.pexels.com/photos/1040427/pexels-photo-1040427.jpeg?auto=compress&cs=tinysrgb&w=400">
+      			<h4>Rolex Black Watch</h4>
+      			<div class="rating">
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star-half-o"></i>
+      				<i class="fa fa-star-o"></i>
+      			</div>
+      			<p>$5099.00</p>
+      		</div>
+      		<div class="col-4">
+      			<img src="https://images.pexels.com/photos/1040427/pexels-photo-1040427.jpeg?auto=compress&cs=tinysrgb&w=400">
+      			<h4>Dream 11 Watch</h4>
+      			<div class="rating">
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star-o"></i>
+      			</div>
+      			<p>$50.00</p>
+      		</div>
+      		<div class="col-4">
+      			<img src="https://images.pexels.com/photos/1040427/pexels-photo-1040427.jpeg?auto=compress&cs=tinysrgb&w=400">
+      			<h4>Black Printed Nike Shoes</h4>
+      			<div class="rating">
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star-half-o"></i>
+      				<i class="fa fa-star-half-o"></i>
+      				<i class="fa fa-star-o"></i>
+      			</div>
+      			<p>$3999.00</p>
+      		</div>
+      		<div class="col-4">
+      			<img src="https://images.pexels.com/photos/1040427/pexels-photo-1040427.jpeg?auto=compress&cs=tinysrgb&w=400">
+      			<h4>Stylo Latest Shoes</h4>
+      			<div class="rating">
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star-half-o"></i>
+      				<i class="fa fa-star-half-o"></i>
+      			</div>
+      			<p>$1500.00</p>
+      		</div>
+      		<div class="col-4">
+      			<img src="https://images.pexels.com/photos/1040427/pexels-photo-1040427.jpeg?auto=compress&cs=tinysrgb&w=400">
+      			<h4>Brand Trousers</h4>
+      			<div class="rating">
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star-half-o"></i>
+      				<i class="fa fa-star-o"></i>
+      			</div>
+      			<p>$5099.00</p>
+      		</div>
+      		<div class="col-4">
+      			<img src="https://images.pexels.com/photos/1040427/pexels-photo-1040427.jpeg?auto=compress&cs=tinysrgb&w=400">
+      			<h4>Stylo Latest Shoes</h4>
+      			<div class="rating">
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star-half-o"></i>
+      				<i class="fa fa-star-half-o"></i>
+      			</div>
+      			<p>$1500.00</p>
+      		</div>
+      		<div class="col-4">
+      			<img src="https://images.pexels.com/photos/1040427/pexels-photo-1040427.jpeg?auto=compress&cs=tinysrgb&w=400">
+      			<h4>Stylo Latest Shoes</h4>
+      			<div class="rating">
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star-half-o"></i>
+      				<i class="fa fa-star-half-o"></i>
+      			</div>
+      			<p>$1500.00</p>
+      		</div>
+      		<div class="col-4">
+      			<img src="https://images.pexels.com/photos/1040427/pexels-photo-1040427.jpeg?auto=compress&cs=tinysrgb&w=400">
+      			<h4>Stylo Latest Shoes</h4>
+      			<div class="rating">
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star-half-o"></i>
+      				<i class="fa fa-star-half-o"></i>
+      			</div>
+      			<p>$1500.00</p>
+      		</div>
+      		<div class="col-4">
+      			<img src="https://images.pexels.com/photos/1040427/pexels-photo-1040427.jpeg?auto=compress&cs=tinysrgb&w=400">
+      			<h4>Stylo Latest Shoes</h4>
+      			<div class="rating">
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star-half-o"></i>
+      				<i class="fa fa-star-half-o"></i>
+      			</div>
+      			<p>$1500.00</p>
+      		</div>
+      		<div class="col-4">
+      			<img src="https://images.pexels.com/photos/1040427/pexels-photo-1040427.jpeg?auto=compress&cs=tinysrgb&w=400">
+      			<h4>Stylo Latest Shoes</h4>
+      			<div class="rating">
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star-half-o"></i>
+      				<i class="fa fa-star-half-o"></i>
+      			</div>
+      			<p>$1500.00</p>
+      		</div>
+      		<div class="col-4">
+      			<img src="https://images.pexels.com/photos/3029796/pexels-photo-3029796.jpeg?auto=compress&cs=tinysrgb&w=400">
+      			<h4>Stylo Latest Shoes</h4>
+      			<div class="rating">
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star-half-o"></i>
+      				<i class="fa fa-star-half-o"></i>
+      			</div>
+      			<p>$1500.00</p>
+      		</div>
+      		<div class="col-4">
+      			<img src="https://images.pexels.com/photos/3029796/pexels-photo-3029796.jpeg?auto=compress&cs=tinysrgb&w=400">
+      			<h4>Stylo Latest Shoes</h4>
+      			<div class="rating">
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star-half-o"></i>
+      				<i class="fa fa-star-half-o"></i>
+      			</div>
+      			<p>$1500.00</p>
+      		</div>
+      		<div class="col-4">
+      			<img src="https://images.pexels.com/photos/3029796/pexels-photo-3029796.jpeg?auto=compress&cs=tinysrgb&w=400">
+      			<h4>Stylo Latest Shoes</h4>
+      			<div class="rating">
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star-half-o"></i>
+      				<i class="fa fa-star-half-o"></i>
+      			</div>
+      			<p>$1500.00</p>
+      		</div>
+      	</div>
+      </div>
+
+      <!-- -------Testimonial-------- -->
+
+       <div class="testimonial">
+       	<div class="small-container2">
+       		<div class="row">
+       			<div class="col-3">
+       				<i class="fa fa-quote-left"></i>
+       				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,incididunt ut labore et dolore magna aliqua. Ut enim ad minim proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+       				<div class="rating">
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star-o"></i>
+      			    </div>
+      			    <img src="user-1.png">
+      			    <h3>Sean Parker</h3>
+       			</div>
+       				<div class="col-3">
+       				<i class="fa fa-quote-left"></i>
+       				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,incididunt ut labore et dolore magna aliqua. Ut enim ad minim proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+       				<div class="rating">
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star-o"></i>
+      			    </div>
+      			    <img src="user-2.png">
+      			    <h3>Mike Smith</h3>
+       			</div>
+       				<div class="col-3">
+       				<i class="fa fa-quote-left"></i>
+       				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,incididunt ut labore et dolore magna aliqua. Ut enim ad minim proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+       				<div class="rating">
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star"></i>
+      				<i class="fa fa-star-o"></i>
+      			    </div>
+      			    <img src="user-3.png">
+      			    <h3>Mable Joe</h3>
+       			</div>
+       		</div>
+       	</div>
+       </div>
+
+       <!-- -------Brands--------- -->
+
+       <div class="brands">
+       	<div class="small-container4">
+       		<div class="row">
+       			<div class="col-5">
+       				<img src="logo-godrej.png">
+       			</div>
+       			<div class="col-5">
+       				<img src="logo-oppo.png">
+       			</div>
+       			<div class="col-5">
+       				<img src="logo-coca-cola.png">
+       			</div>
+       			<div class="col-5">
+       				<img src="logo-paypal.png">
+       			</div>
+       			<div class="col-5">
+       				<img src="logo-philips.png">
+       			</div>
+       		</div>
+       	</div>
+       </div>
+
+       <!-- ---------footer---------- -->
+
+       <div class="footer">
+       	<div class="container">
+       		<div class="row">
+       			<div class="footer-col-1">
+       				<h3>Download Our App</h3>
+       				<p>Download App for Android and ios mobile phone.</p>
+       				<div class="app-logo">
+       					<img src="play-store.png">
+       					<img src="app-store.png">
+       				</div>
+       			</div>
+       			<div class="footer-col-2">
+       				<img src="logo-white.png">
+       				<p>Our Purpose Is to Sustainable Make the Pleasure and
+       				Benefits of Sport Accessible to the Many.</p>
+       			</div>
+       			<div class="footer-col-3">
+       				<h3>Useful Links</h3>
+       				<ul>
+       					<li>Coupons</li>
+       					<li>Blog Post</li>
+       					<li>Return Polices</li>
+       					<li>Join Affiliate</li>
+       				</ul>
+       			</div>
+       			<div class="footer-col-4">
+       				<h3>Follow us</h3>
+       				<ul>
+       					<li>Facebook</li>
+       					<li>Twitter</li>
+       					<li>Instagram</li>
+       					<li>YouTube</li>
+       				</ul>
+       			</div>
+       		</div>
+
+       		<hr>
+       		<p class="copyright">Copyright 2024 - My Website</p>
+       	</div>
+       </div>
+
+       <!-- ------JavaScript for show menu and hide menu------- -->
+       <script>
+       	let MenuItems = document.getElementById('MenuItems');
+       	MenuItems.style.maxHeight = "0px";
+       	function menutoggle() {
+       		if(MenuItems.style.maxHeight == "0px"){
+       			MenuItems.style.maxHeight = "200px";
+       		}else{
+       			MenuItems.style.maxHeight = "0px";
+       		}
+       	}
+       </script>
+
+</body>
+</html>
