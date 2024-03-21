@@ -89,9 +89,8 @@ p{
 	margin: 70px 0;
 }
 .col-3{
-	flex-basis: 20%;
+	flex-basis: 30%;
 	min-width: 250px;
-	min-height: 200px;
 	margin-bottom: 30px;
 	transition: all linear 0.3s;
 }
@@ -104,7 +103,6 @@ p{
 }
 .small-container{
 	max-width: 1080px;
-	max-height: 1000px;
 	margin: auto;
 	padding-left: 25px;
 	padding-right: 25px;
@@ -335,6 +333,7 @@ select:focus{
 }
 
 /*------------Single Product details----------*/
+
 .small-container{
 	max-width: 1080px;
 	margin: auto;
@@ -500,7 +499,7 @@ th:last-child{
    }
    .single-product h1{
    	font-size: 26px;
-   	line-height: 32px;
+   	line-height: 12px;
    }
    .cart-info p{
    	display: none;
